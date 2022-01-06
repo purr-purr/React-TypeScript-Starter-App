@@ -1,0 +1,19 @@
+// Breackpoints
+$low-mobile-bp: 375px;
+$mobile-bp: 1024px;
+$tablet-bp: 1310px;
+
+// Colors
+$primary: #ac28f5;
+$primaryHover: #c55fff;
+$secondary: #ccff74;
+
+:root {
+  --theme-body-color: #333;
+  --theme-text-primary: #000;
+}
+
+.light-mode {
+  --theme-body-color: #b7b7b7;
+  --theme-text-primary: #fff;
+}

@@ -1,0 +1,68 @@
+@import './resources';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--theme-text-primary);
+  background: var(--theme-body-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  @include media-tablet {
+    padding: 0 30px;
+  }
+  @include media-mobile {
+    padding: 0 15px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+strong {
+  font-weight: bold;
+}

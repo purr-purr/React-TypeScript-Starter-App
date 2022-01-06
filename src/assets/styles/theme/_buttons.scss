@@ -1,0 +1,27 @@
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  padding: 14px 23px;
+
+  &:hover {
+    transition: all 0.3s ease;
+  }
+
+  &:disabled {
+    background: var(--thame-modal-backing-bg);
+    color: var(--thame-disabled-btn-text);
+    box-shadow: none;
+    cursor: not-allowed;
+
+    &:hover {
+      background: var(--thame-modal-backing-bg);
+      color: var(--thame-disabled-btn-text);
+      box-shadow: none;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
